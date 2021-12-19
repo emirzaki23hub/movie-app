@@ -1,0 +1,31 @@
+.search {
+    display: flex;
+    flex-direction: row;  
+    padding: 10px 10px;  
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    outline: none;
+    width: 500px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+.input-submit {
+    font-weight: bold; 
+    outline: none;
+    font-size: 18px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 2px;
+}
+

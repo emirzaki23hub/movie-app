@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #101820FF;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 #555;
+    justify-content: space-between;
+}
+
+img-logo {
+    width: 49px;
+    height: 48px;
+    margin: 15px;
+}
