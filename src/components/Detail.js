@@ -55,7 +55,7 @@ const Detail = (props) => {
         className="close"
         style={{ float: "right" }}
         onClick={() => props.onMovieSelect()}
-      />
+      >X</CloseButton>
     </Container>
   );
 };
