@@ -7,19 +7,19 @@ import spinner from "../src/assets/Spin.gif";
 import Detail from "./components/Detail";
 import axios from "axios";
 
-const API = "http://www.omdbapi.com/?s=harry+potter&apikey=83b6585a";
-
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [selectedMovie, onMovieSelect] = useState();
 
   useEffect(() => {
-    axios.get(API).then((jsonResponse) => {
-      dispatch({
-        type: "SEARCH_MOVIES_SUCCESS",
-        payload: jsonResponse.data.Search,
+    axios
+      .get(`http://www.omdbapi.com/?s=harry+potter&apikey=83b6585a`)
+      .then((jsonResponse) => {
+        dispatch({
+          type: "SEARCH_MOVIES_SUCCESS",
+          payload: jsonResponse.data.Search,
+        });
       });
-    });
   }, []);
 
   const search = (search) => {
